@@ -1,0 +1,43 @@
+---
+title: Welcome to Middleman
+---
+
+%h1
+  Getting started
+.markdown
+  %h2#what-is-jamdocs
+    %a{"aria-hidden" => "true", :href => "#what-is-jamdocs"}>
+      %span.icon.icon-link
+    What is Jamdocs
+  %p
+    Jamdocs is a documentation theme for Gridsome, built to spin
+    up
+    quick, beautiful and static documentation sites fast without
+    hassle.
+    Since there is no theming system for Gridsome yet, Jamdocs
+    comes
+    with Gridsome, plug-ins and packages as dependencies.
+  %h2#local-installation
+    %a{"aria-hidden" => "true", :href => "#local-installation"}>
+      %span.icon.icon-link
+    Local
+    installation
+  %p
+    Even though Jamdocs is so simple, you dont really need to set
+    it up
+    localy (you could just fork it on github to edit styles and
+    md-files) - if you want to change it up a bit I recommend
+    setting up
+    localy for a better developer experience.
+  %p
+    To set up a new instance of Jamdocs, and start developing
+    just
+    clone the project from Github like, go to the directory and
+    run
+    gridsome:
+  %pre.language-bash
+    %span.token.function git
+    clone https://github.com/samuelhorn/jamdocs project-name
+    %span.token.builtin.class-name cd
+    project-name
+    gridsome develop
