@@ -16,6 +16,8 @@ page '/*.txt', layout: false
 # Activate live-reload (with the reload gem)
 activate :livereload
 
+set :partials_dir, 'partials'
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 

@@ -2,7 +2,7 @@
   %h3.section-title Pages
   %ul
     - sitemap.resources.each do |resource|
-      - if resource.path.end_with?('html')
+      - if resource.path.end_with?('html') && !resource.path.start_with?('admin')
         %li
           %a.topic{href: resource.path, class: ('active' if current_page.page_id == resource.page_id)}
             = resource.data.title
