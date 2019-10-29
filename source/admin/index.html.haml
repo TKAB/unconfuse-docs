@@ -1,0 +1,50 @@
+---
+title: Welcome to Middleman
+---
+
+%h2 Zugang und Account
+%ul
+  %li
+    Das System ist zugänglich unter #{link_to "https://regatten.rudern.at", "https://regatten.rudern.at"} und
+    Klick auf
+    %em Administration
+    (rechts oben)
+  %li
+    Emailadressen sind bereits hinterlegt, durch 
+    %em Passwort zurücksetzen
+    wird der Zugang ermöglicht
+
+%h2 Mitglieder verwalten
+%p Mitglieder können erstellt und bearbeitet, aber nicht gelöscht werden. Erlaubnis dazu haben Administratoren für alle und Vereinsverwalter für die Mitglieder ihrer Vereine.
+%p Kurze Erläuterungen:
+%ul
+  %li UID: eindeutiger Identifier
+  %li UID2: zweiter eindeutiger Identifier
+  %li Email: Emailadresse, die für Mitteilungen und Logins verwendet wird; die Eingabe ist notwendig; Adressen mit "locked" sind erfundende Adressen für Verbandmitglieder, für die keine Adresse bekannt ist
+  %li Admin: volle Administrationsrechte (Verwaltung aller Mitglieder, Regatten und Vereine)
+%p
+  Änderungen in den obigen Feldern müssen mit Klick auf
+  %em Mitglied aktualisieren
+  bestätigt werden.
+%ul
+  %li
+    Mitgliedschaften: eine Liste aller Vereinsmitgliedschaften mit Status und Erlaubnis für Vereinsverwaltung und Regattameldung; jede Änderung muss mit Klick auf
+    %em Speichern
+    bestätigt werden
+  %li
+    Mitgliedschaft erstellen: eine neue Vereinsmitgliedschaft eintragen; muss mit Klick auf
+    %em Mitgliedschaft erstellen
+    bestätigt werden
+
+%h2 Vereine verwalten
+%p Vereine können erstellt und bearbeitet, aber nicht gelöscht werden. Erlaubnis dazu haben Administratoren für alle Vereine und Vereinsverwalter für ihre Vereine.
+%p Die Emailadresse wird verwendet um bei Doppelmitgliedschaft und Erstmeldung im Jahr, den Vorstand zu verständigen.
+%p Pro Verein können maximal zwei Mitglieder als meldungsberechtigt eingetragen werden.
+
+%h2 Verschiedenes
+%h3 Ein Pseudo-Mitglied zur allgemeinen Verwaltung für einen Verein anlegen
+%ol
+  %li Alle bestehenden Melde- und Verwaltungsberechtigungen von den Vereinsmitgliedern entfernen
+  %li Falls die Email-Adresse schon bei einer Person eingetragen ist, die Email dieser Person löschen
+  %li Neues Pseudo-Mitglied anlegen (z.B. mit Vorname "Verwaltung und Meldung", Nachname "<Vereinskürzel>",...), Mitgliedschaft im entsprechenden Verein eingestellt (Status "Unterstützendes Mitglied") und Berechtigungen für Verwaltung und Meldung angehakt
+  %li Fertig
