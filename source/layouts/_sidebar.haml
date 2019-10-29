@@ -4,45 +4,6 @@
     - sitemap.resources.each do |resource|
       - if resource.path.end_with?('html')
         %li
-          %a.topic{href: resource.path}= resource.data.title
-        %li= resource.children.map {|child| "(#{child.page_id})"}.join(', ')
+          %a.topic{href: resource.path, class: ('active' if current_page.page_id == resource.page_id)}
+            = resource.data.title
 
-
-%ul
-  %li.section
-    %h3.section-title Introduction
-    %ul
-      %li
-        %a.topic.active--exact.active{:href => "/getting-started"}
-          Getting
-          started
-        / 
-        %ul
-          %li
-            %a.sub-topic{:href => "/getting-started#what-is-jamdocs"}
-              What is Jamdocs
-          %li
-            %a.sub-topic{:href => "/getting-started#local-installation"}
-              Local installation
-  %li.section
-    %h3.section-title Setup
-    %ul
-      %li
-        %a.topic{:href => "/theme-configuration"}
-          Theme configuration
-        %ul
-          %li
-            %a.sub-topic{:href => "/theme-configuration#changing-logo"}
-              Changing logo
-          %li
-            %a.sub-topic{:href => "/theme-configuration#adding-icons"}
-              Adding icons
-          %li
-            %a.sub-topic{:href => "/theme-configuration#changing-colors"}
-              Changing colors
-          %li
-            %a.sub-topic{:href => "/theme-configuration#changing-font"}
-              Changing font
-          %li
-            %a.sub-topic{:href => "/theme-configuration#edit-the-sidebar"}
-              Edit the sidebar
