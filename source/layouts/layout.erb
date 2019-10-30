@@ -8,45 +8,45 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title ||" Middleman" %></title>
-      <%= stylesheet_link_tag" site" %>
-        <%= javascript_include_tag" site" %>
-          <meta name="gridsome:hash"
-            content="3b749c52d441e56cfafa667227576decaa3317ac">
-          <meta
-            data-vue-tag="ssr" charset="utf-8">
-          <meta data-vue-tag="ssr"
-            name="generator" content="Gridsome v0.7.8">
-          <meta data-vue-tag="ssr"
-            data-key="viewport" name="viewport" content="width=device-width,
-            initial-scale=1, viewport-fit=cover">
-          <meta data-vue-tag="ssr"
-            data-key="format-detection" name="format-detection"
-            content="telephone=no">
-          <meta data-vue-tag="ssr" name="theme-color"
-            content="#10c186">
-          <meta data-vue-tag="ssr" name="google-site-verification"
-            content="Z-CC_p6Ixw3BiKD0vzWR43bbw2khgwKCFfwin8bd8ZE">
-          <meta
-            data-vue-tag="ssr" name="apple-mobile-web-app-status-bar-style"
-            content="default">
-          <meta data-vue-tag="ssr" data-key="description"
-            name="description" content="A theme for static site documentation
-            based on
-            Gridsome, ready to deploy to Netlify in one click.">
-          <link
-            data-vue-tag="ssr" rel="icon" href="data:,">
-        </head>
-        <body class="bright">
-          <div id="app">
-            <aside
-              class="sidebar">
-              <nav>
-                <%= partial "partials/sidebar" %>
-              </nav>
-            </aside>
-            <main class="main">
-              <%= yield %>
-            </main>
-          </div>
-        </body>
-      </html>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
+    <meta name="gridsome:hash"
+      content="3b749c52d441e56cfafa667227576decaa3317ac">
+    <meta
+      data-vue-tag="ssr" charset="utf-8">
+    <meta data-vue-tag="ssr"
+      name="generator" content="Gridsome v0.7.8">
+    <meta data-vue-tag="ssr"
+      data-key="viewport" name="viewport" content="width=device-width,
+      initial-scale=1, viewport-fit=cover">
+    <meta data-vue-tag="ssr"
+      data-key="format-detection" name="format-detection"
+      content="telephone=no">
+    <meta data-vue-tag="ssr" name="theme-color"
+      content="#10c186">
+    <meta data-vue-tag="ssr" name="google-site-verification"
+      content="Z-CC_p6Ixw3BiKD0vzWR43bbw2khgwKCFfwin8bd8ZE">
+    <meta
+      data-vue-tag="ssr" name="apple-mobile-web-app-status-bar-style"
+      content="default">
+    <meta data-vue-tag="ssr" data-key="description"
+      name="description" content="A theme for static site documentation
+      based on
+      Gridsome, ready to deploy to Netlify in one click.">
+    <link
+      data-vue-tag="ssr" rel="icon" href="data:,">
+  </head>
+  <body class="bright">
+    <div id="app">
+      <aside
+        class="sidebar">
+        <nav>
+          <%= partial "partials/sidebar" %>
+        </nav>
+      </aside>
+      <main class="main">
+        <%= yield %>
+      </main>
+    </div>
+  </body>
+</html>
