@@ -3,6 +3,11 @@ title: Welcome to Middleman
 toc:
   - name: Benötigte Daten
     anchor: data
+    sub:
+      - name: Sub 1
+        anchor: sub1
+      - name: Sub 2
+        anchor: sub2
   - name: Rennimport
     anchor: import
   - name: Meldungsexport
