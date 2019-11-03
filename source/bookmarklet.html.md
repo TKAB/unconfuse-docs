@@ -1,27 +1,47 @@
 ---
 title: Welcome to Middleman
 toc:
-  - name: Benötigte Daten
-    anchor: data
-    sub:
-      - name: Sub 1
-        anchor: sub1
-      - name: Sub 2
-        anchor: sub2
-  - name: Rennimport
-    anchor: import
-  - name: Meldungsexport
-    anchor: export
-last_change: 2019-11-01
+  - name: Desktop
+    anchor: desktop
+  - name: Mobile
+    anchor: mobile
+    # sub:
+    #   - name: Sub 1
+    #     anchor: sub1
+    #   - name: Sub 2
+    #     anchor: mobile
+last_change: 2019-11-02
 ---
 
 # Bookmarklet
 
-## asdfads asdfa asdfa ee983ööl ase
+For quick and easy logging while browsing web pages add the unconfuse
+bookmarklet to your browser favorites. It allows you to log any page or
+document that you are looking at.
 
-Download Bootstrap to get the compiled CSS and JavaScript, source code, or include it with your favorite package managers like npm, RubyGems, and more.
 
- Download ready-to-use compiled code for Bootstrap v4.3.1 to easily drop into your project, which includes:
+## Desktop
 
-  * Compiled and minified CSS bundles (see CSS files comparison)
-  * Compiled and minified JavaScript plugins
+This is a single step activity.
+
+1. Drag the following link to your browser's bookmark bar:
+Link: Log!
+2. Done
+
+From now on whenever you are on an interesting page, press the bookmark to log the page.
+
+
+## Mobile
+
+This is a multi-step activity. Please contact us if you're stuck.
+
+1. Create a bookmark by bookmarking this page
+2. Copy the red string below
+3. Edit the bookmark that you created
+4. Paste the copied string into the address field and change the name to Log!
+5. Done.
+
+<p class="text-danger">
+javascript:o=location.href;t=document.title;if(document.getSelection)%7Bs=document.getSelection();%7Delse%7Bd="";%7D;void(open("https://app.unconfuse.me/bookmarklet_add?url="+encodeURIComponent(o)+"&description="+encodeURIComponent(s)+"&title="+encodeURIComponent(t),"unconfuse%20add","toolbar=no,scrollbars=yes,width=750,height=700"));
+</p>
+

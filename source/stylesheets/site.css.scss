@@ -10,3 +10,10 @@ $bd-danger:        #d9534f !default;
 @import "bootstrap/bootstrap";
 @import 'bootstrap-docs/docs';
 
+
+// Make the subitems in the sidebar display always
+// (by default they are only displayed when the parent
+//  item is active)
+.bd-sidenav {
+  display: block;
+}
